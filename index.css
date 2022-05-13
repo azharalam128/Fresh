@@ -1,0 +1,674 @@
+*{
+    box-sizing: border-box;
+   
+}
+html, body  {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+/* body{
+    margin: 0;
+    padding: 0;
+} */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    float: right;
+    font-size: 1.3rem;
+  
+}
+/* .brand-title{
+    font-size: 1.7rem;
+    margin: 0.5rem;
+} */
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.navbar-links li{
+    list-style: none;
+}
+.navbar-links li a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+}
+.navbar-links li:hover{
+    background-color: rgb(181, 175, 175);
+}
+.dropbtn{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    border: none;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    outline: none;
+    padding: 1rem;
+    display: block;
+}
+.dropbtn:hover{
+    background-color: rgb(181, 175, 175);
+}
+.toggler-button{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggler-button .bar{
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+/* ************************************ */
+.container1{
+margin: 0;
+padding-right: 0;
+border: 0;
+background-repeat: no-repeat;
+max-width: 100%;
+height: 60vh;
+overflow: hidden;
+}
+.container1 h1{
+    position: absolute;
+    width: 886px;
+    height: 174px;
+    left: 142px;
+    top: 6rem;
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 87px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+.container1 h2{
+    position: absolute;
+    width: 795px;
+    height: 44px;
+    left: 192px;
+    top: 20rem;
+    font-family: 'Noto Serif';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+}
+.container1 button{
+    position: absolute;
+    left: 174px;
+    top: 20em;
+    padding: 12px;
+    background: #FFFFFF;
+    border-radius: 10px;
+
+    font-family: 'Manuale';
+    font-style: normal;
+    font-weight: 40;
+    font-size: 22px;
+    line-height: 32px;
+    /* identical to box height */
+
+    color: #000000;
+}
+.container1 button:hover{
+    background-color: rgb(208, 203, 203);
+}
+.container2{
+background-repeat: no-repeat;
+max-width: 100%;
+height: 80vh;
+overflow: hidden;
+}
+.container2 h1{
+    position: absolute;
+    left: 4rem;
+    top: 34rem;
+    font-family: 'Manuale';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    /* line-height: 92px; */
+    color: #EB6B57;
+}
+.container2 span{
+    color: black;
+}
+.container2 p{
+    position: absolute;
+    width: 50%;
+    left: 4rem;
+    top: 40rem;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 30px;
+    text-align: justify;
+
+    color: #000000;
+}
+.container3{
+    margin: 0;
+padding-right: 0;
+border: 0;
+background-repeat: no-repeat;
+max-width: 100%;
+overflow: hidden;
+}
+.container3 img{
+    width: 100%;
+}
+.container3 h1 {
+    position: absolute;
+    width: 63.4375rem;
+    height: 8.625rem;
+    left: 4rem;
+    top: 78rem;
+    font-family: 'Manuale';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6rem;
+    color: #FFFFFF;
+}
+.container3 h2 {
+    position: absolute;
+    width: 49.3125rem;
+    height: 3.25rem;
+    left: 4rem;
+    top: 90rem;
+    font-family: 'Manuale';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.25rem;
+    color: #FFFFFF;
+}
+
+.c3-p1 {
+    position: absolute;
+    width: 11.875rem;
+    height: 2.875rem;
+    left: 7.75rem;
+    top: 98rem;
+    font-family: 'Manuale';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 27px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.c3-p2 {
+    position: absolute;
+    width: 22.875rem;
+    height: 8.25rem;
+    left: 7.75rem;
+    top: 103rem;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    color: #FFFFFF;
+}
+.c3-p3 {
+    position: absolute;
+    width: 22.875rem;
+    height: 8.25rem;
+    left: 37.5625rem;
+    top: 103rem;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    color: #FFFFFF;
+}
+.container3 button{
+    position: absolute;
+    left: 7.75rem;
+    right: 102.9375rem;
+    top: 117rem;
+    bottom: 8.9375rem;
+    padding: 20px 200px 50px 30px;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Manuale';
+    font-style: normal;
+    font-size: 2rem;
+    line-height: 32px;
+    text-decoration: none;
+   
+}
+.container3 button:hover{
+    background-color: rgb(173, 168, 168);
+}
+
+
+
+
+.container4{
+    margin: 0;
+padding-right: 0;
+border: 0;
+background-repeat: no-repeat;
+max-width: 100%;
+overflow: hidden;
+}
+.container4 img{
+    width: 100%;
+}
+.container5{
+    margin: 0;
+padding-right: 0;
+border: 0;
+background-repeat: no-repeat;
+max-width: 100%;
+overflow: hidden;
+}
+.container5 img{
+    width: 100%;
+}
+
+/* *********************************************************************** */
+/* @media (max-width:2500px){
+    html, body{
+        overflow-x: hidden;
+    }
+    .imgc1{
+        max-width: 100%;
+        height: auto;
+    }
+    .container2 h1{
+        left: 4rem;
+        top: 50rem;
+        font-size: 3.5rem;
+    }
+    .container2 p{
+        width: 50%;
+        top: 54.5rem;
+        font-size: 2rem;
+        line-height: 33px;
+    }
+} */
+@media (max-width:1808px){
+    html, body{
+        overflow-x: hidden;
+    }
+    .imgc1{
+        max-width: 100%;
+        height: auto;
+    }
+    .container2 h1{
+        left: 4rem;
+        top: 43rem;
+        font-size: 3.5rem;
+    }
+    .container2 p{
+        width: 50%;
+        top: 48rem;
+        font-size: 1.7rem;
+        line-height: 33px;
+    }
+
+
+   
+}
+@media (max-width:1400px){
+    html, body{
+        overflow-x: hidden;
+    }
+    .imgc1{
+        max-width: 100%;
+        height: auto;
+    }
+    .container2 h1{
+        left: 4rem;
+        top: 42rem;
+        font-size: 3.5rem;
+    }
+    .container2 p{
+        top: 47rem;
+        font-size: 1.2rem;
+        line-height: 28px;
+    }
+    .container3 h1 {
+        left: 4rem;
+        top: 99rem;
+        font-size: 4rem;
+    }
+    .container3 h2 {
+        left: 4rem;
+        top: 106rem;
+    }
+    .c3-p1 {
+        left: 7.75rem;
+        top: 111rem;
+    }
+    .c3-p2 {
+        left: 7.75rem;
+        top: 115rem;
+    }
+    .c3-p3 {
+        left: 37.5625rem;
+        top: 115rem;
+    }
+    .container3 button {
+        left: 7.75rem;
+        top: 129rem;
+    }
+}
+@media (max-width:1200px){
+    .container3 h1 {
+        left: 3rem;
+        top: 100rem;
+        font-size: 3rem;
+    }
+    .container3 h2 {
+        left: 3rem;
+        top: 106rem;
+        font-size: 1.8rem;
+    }
+    
+    .c3-p1 {
+        left: 5.75rem;
+        top: 111rem;
+        font-size: 23px;
+    }
+    
+    .c3-p2 {
+        width: 16.875rem;
+        left: 5.75rem;
+        top: 114rem;
+        font-size: 1.7rem;
+        line-height: 1.75rem;
+    }
+    .c3-p3 {
+        width: 16.875rem;
+        left: 25.5625rem;
+        top: 114rem;
+        font-size: 1.7rem;
+        line-height: 1.75rem;
+    }
+    .container3 button {
+        left: 3.75rem;
+        top: 125rem;
+        padding: 15px 145px 48px 20px;
+        border: 2px solid #FFFFFF;
+        border-radius: 20px;
+        font-size: 1.7rem;
+        line-height: 30px;
+        text-decoration: none;
+    }
+}
+@media (max-width:1094px){
+    html, body{
+        overflow-x: hidden;
+    }
+    .toggler-button{
+        display: flex;
+    }
+    .navbar-links{
+        display: none;
+        width: 100%;
+        overflow: hidden;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    .navbar-links li{
+        text-align: center;
+    }
+    .navbar-links li a{
+        padding: .5rem 1rem;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+    .imgc1{
+        max-width: 100%;
+        height: auto;
+    }
+    .container1{
+        overflow: hidden;
+    }
+    .container1 h1{
+        position:absolute;
+        width: 100%;
+        height: auto;
+        left: auto;
+        top: 5rem;
+        font-size: 3.5rem;
+    }
+    .container1 h2{
+        position: absolute;
+    width: 100%;
+    height: auto;
+    left: 2rem;
+    top: 15rem;
+    }
+    .container1 button{
+        left: 2rem;
+        top: 21rem;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .container2 h1{
+        left: 4rem;
+        top: 35rem;
+        font-size: 3.5rem;
+    }
+    .container2 p{
+        top: 42rem;
+        font-size: 1.2rem;
+        line-height: 28px;
+    }
+}
+@media (max-width:920px) {
+    .container2 h1{
+        left: 4rem;
+        top: 30rem;
+        font-size: 3.5rem;
+    }
+    .container2 p{
+        top: 36rem;
+        font-size: 1rem;
+        line-height: 28px;
+    }
+    
+}
+@media (max-width:750px) {
+    html, body{
+        overflow-x: hidden;
+    }
+    .container1 h1{
+        position:absolute;
+        width: 100%;
+        height: auto;
+        left: auto;
+        top: 2rem;
+        font-size: 2.2rem;
+        line-height:4rem;
+    }
+    .container1 h2{
+        position: absolute;
+    width: 100%;
+    height: auto;
+    left: 2rem;
+    top: 10rem;
+    font-size: 1rem;
+        line-height:1rem;
+    }
+    .container1 button{
+        left: 2rem;
+        top: 15rem;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+    .container2 h1{
+        top: 24rem;
+        font-size: 2.8rem;
+    }
+    .container2 p{
+        top: 29rem;
+        font-size: .8rem;
+        line-height: 25px;
+    }
+    
+}
+
+@media (max-width:480px) {
+    html, body{
+        overflow-x: hidden;
+    }
+    .container1 h1{
+        position:absolute;
+        width: 100%;
+        height: auto;
+        left: auto;
+        top: 3rem;
+        font-size: 1.5rem;
+        line-height:1.5rem;
+        font-weight: 1rem;
+    }
+    .container1 h2{
+        position: absolute;
+    width: 100%;
+    height: auto;
+    left: 2rem;
+    top: 8rem;
+    font-size: .7rem;
+        line-height: .8rem;
+    }
+    .container1 button{
+        left: 1.5rem;
+        top: 11rem;
+        font-size: .4rem;
+        line-height: .2rem;
+        padding: .6rem;
+    }
+    .container2 h1{
+        top: 15rem;
+        left: 1rem;
+        font-size: 1.5rem;
+    }
+    .container2 p{
+        top: 18rem;
+        left: 1rem;
+        font-size: .5rem;
+        line-height: 16px;
+    }
+    .container2{
+        height: 60vh;
+    }
+    .container3 h1 {
+        left: 1rem;
+        top: 45rem;
+        font-size: 1rem;
+    }
+    .container3 h2 {
+        left: 1rem;
+        top: 47rem;
+        font-size: .6rem;
+    }
+    
+    .c3-p1 {
+        left: 1.75rem;
+        top: 48rem;
+        font-size: 9px;
+    }
+    
+    .c3-p2 {
+        width: 7.875rem;
+        left: 1.75rem;
+        top: 50rem;
+        font-size: .6rem;
+        line-height: 0.75rem;
+    }
+    .c3-p3 {
+        width: 6.875rem;
+        left: 10.5625rem;
+        top: 50rem;
+        font-size: .6rem;
+        line-height: 0.75rem;
+    }
+    .container3 button {
+        left: 1.75rem;
+        top: 54rem;
+        padding: 1px 56px 20px 22px;
+        border: 1px solid #FFFFFF;
+        border-radius: 20px;
+        font-size: 0.7rem;
+        line-height: 18px;
+        text-decoration: none;
+    }
+}
+@media (max-width:375px){
+    .container3 h1 {
+        left: 1rem;
+        top: 45rem;
+        font-size: 1rem;
+    }
+    .container3 h2 {
+        left: 1rem;
+        top: 47rem;
+        font-size: .6rem;
+    }
+    
+    .c3-p1 {
+        left: 1.75rem;
+        top: 48rem;
+        font-size: 9px;
+    }
+    
+    .c3-p2 {
+        width: 7.875rem;
+        left: 1.75rem;
+        top: 50rem;
+        font-size: .6rem;
+        line-height: 0.75rem;
+    }
+    .c3-p3 {
+        width: 6.875rem;
+        left: 10.5625rem;
+        top: 50rem;
+        font-size: .6rem;
+        line-height: 0.75rem;
+    }
+    .container3 button {
+        left: 1.75rem;
+        top: 54rem;
+        padding: 1px 56px 20px 22px;
+        border: 1px solid #FFFFFF;
+        border-radius: 20px;
+        font-size: 0.7rem;
+        line-height: 18px;
+        text-decoration: none;
+    }
+}
